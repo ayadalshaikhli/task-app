@@ -4,7 +4,7 @@
 
 <h2> Live Demo </h2>
 
-<p>Click <a href="">here</a> to view a live demo of the application.</p>
+<p>Click <a href="https://task-app-foods.vercel.app/">here</a> to view a live demo of the application.</p>
 
 <h2>Features</h2>
 
@@ -21,7 +21,7 @@
 
 <ol>
   <li>Clone the repository:<br>
-    <code>git clone  task-app</code></li>
+    <code>git clone https://github.com/ayadalshaikhli/task-app.git task-app</code></li>
   <li>Navigate to the project directory:<br>
     <code>cd task-app</code></li>
   <li>Install the dependencies:<br>
