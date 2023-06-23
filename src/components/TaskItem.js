@@ -14,6 +14,7 @@ const TaskItem = ({
   handleTaskNameChange, // Function to handle task name change
   handleTaskBlur, // Function to handle task blur (when editing is finished)
   handleTaskKeyDown, // Function to handle keyboard events on tasks
+  
 }) => {
   const isEditing = editingTaskId === task.id;
 

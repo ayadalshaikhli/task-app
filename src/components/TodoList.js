@@ -3,7 +3,6 @@ import { gsap } from "gsap";
 import TaskItem from "./TaskItem";
 import FilterButtons from "./FilterButtons";
 import ClearCompletedButton from "./ClearCompletedButton";
-import { Tween } from "gsap/gsap-core";
 
 const TodoList = () => {
   const [tasks, setTasks] = useState([]);
