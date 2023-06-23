@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+main::before {
+  animation: grain 8s steps(20) infinite;
+  background-image: url("/noise.png");
+  content: "";
+  scale: 1;
+  height: 300%;
+  left: -50%;
+  opacity: 1;
+  position: fixed;
+  top: -100%;
+  width: 300%;
+  z-index: -1;
+}
+@keyframes grain {
+0%,
+100% {
+  transform: translate(0, 0);
+}
+10% {
+  transform: translate(-5%, -10%);
+}
+20% {
+  transform: translate(-15%, 5%);
+}
+30% {
+  transform: translate(7%, -25%);
+}
+40% {
+  transform: translate(-5%, 25%);
+}
+50% {
+  transform: translate(-15%, 10%);
+}
+60% {
+  transform: translate(15%, 0%);
+}
+70% {
+  transform: translate(0%, 15%);
+}
+80% {
+  transform: translate(3%, 35%);
+}
+90% {
+  transform: translate(-10%, 10%);
+}
+}
